@@ -6,9 +6,6 @@
     },
     "routes": [
       { "src": "/(.*)", "dest": "/api/index.php" }
-    ],
-    "env": {
-      "NOW_PHP_DEBUG": "1"
-    }
+    ]
   }
   
