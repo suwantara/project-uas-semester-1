@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ANCESTRAVEL</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
     <!-- <link rel="stylesheet" href="../layout/global.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <?php require_once "../application/controller/destination.php";?>
