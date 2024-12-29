@@ -114,23 +114,55 @@
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Contact Us</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="" method="POST">
                 <div class="form-group">
                     <label>Name</label>
-                    <input type="text" required>
+                    <input type="text" name="name" required>
                 </div>
                 <div class="form-group">
                     <label>Email</label>
-                    <input type="email" required>
+                    <input type="email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label>Message</label>
-                    <textarea rows="5" required></textarea>
+                    <textarea rows="5" name="message" required></textarea>
                 </div>
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" name="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
+    
+    <?php
+    if(isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        
+        // Email tujuan
+        $to = "ancestralhall@macr2.com"; // Ganti dengan email Anda
+        
+        // Subject email
+        $subject = "New Contact Form Submission from $name";
+        
+        // Format pesan email
+        $email_content = "Name: $name\n";
+        $email_content .= "Email: $email\n\n";
+        $email_content .= "Message:\n$message\n";
+        
+        // Header email
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
+        $headers .= "X-Mailer: PHP/" . phpversion();
+        
+        // Kirim email
+        if(mail($to, $subject, $email_content, $headers)) {
+            echo "<script>alert('Thank you for your message. We will contact you soon!');</script>";
+        } else {
+            echo "<script>alert('Sorry, something went wrong. Please try again later.');</script>";
+        }
+    }
+    ?>
+
 
 
     
