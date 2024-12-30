@@ -57,6 +57,12 @@ body {
     margin-top: 1rem;
 }
 
+/* Destination Styling */
+h2.section-title{
+    color: white;
+
+}
+
 /* Section Styling */
 section {
     padding: 4rem 1rem;

@@ -8,14 +8,23 @@
     <?php require_once "application/controller/rental.php";?>
 </head>
 <body>
-
     <!-- Header dengan Navigation -->
     <?php include "layout/header.html" ?>
+
+    <!-- Hero Section -->
+    <section id="beranda">
+    <div class="hero-content">
+        <h1>Pilih Rental Wisata Terbaik di Bali</h1>
+        <p>Sewa tansportasi lepas kunci & tour dengan driver terbaik di Bali.
+            Free delivery Airport,Kuta & Seminyak Area, jaminan unit terlengkap,
+            jaminan unit bersih dan terawat, pelayanan 24 jam.
+        </p>
+    </div>
+    </section>
 
     <!-- Rental Section -->
     <section id="rental">
         <div class="container">
-            <h2 class="section-title">Rental</h2>
             <div class="grid">
             
             <?php foreach ($data_rental as $rental): ?>

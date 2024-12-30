@@ -15,14 +15,14 @@
 
         <!-- Hero Section -->
         <section id="beranda">
-    <div class="hero-content">
-        <h1>Pilih Destinasi Wisata Terbaik di Bali</h1>
-        <p>Dapatkan pengalaman wisata yang luar biasa di Bali,
-        tempat keindahan alam dan budaya hidup bersatu.
-         Nikmati perjalanan yang penuh inspirasi, dari pantai 
-         terindah hingga candi-candi yang luar biasa.</p>
-    </div>
-    </section>
+        <div class="hero-content">
+            <h1>Pilih Destinasi Wisata Terbaik di Bali</h1>
+            <p>Dapatkan pengalaman wisata yang luar biasa di Bali,
+            tempat keindahan alam dan budaya hidup bersatu.
+            Nikmati perjalanan yang penuh inspirasi, dari pantai 
+            terindah hingga candi-candi yang luar biasa.</p>
+        </div>
+        </section>
 
     <!-- Destinasi Section -->
     <section id="destinasi">

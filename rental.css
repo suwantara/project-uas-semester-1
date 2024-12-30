@@ -50,6 +50,31 @@ nav {
 }
 
 /*rental CSS*/
+
+section {
+    padding: 56px 16px;
+}
+
+section:nth-child(even) {
+    background: #011b00;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 64px 16px;
+    color: 
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
 /* Grid Layout */
 .grid {
     display: grid;

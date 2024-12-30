@@ -1,7 +1,7 @@
 <?php
 $data_rental = array(
     array(
-        'gambar'=> '../asset/img/rental/aerox-155.png',
+        'gambar'=> '../asset/img/rental/aerox-155.jpg',
         'judul_rental'=> 'Yamaha Aerox',
         'deskripsi'=> 'Yamaha Aerox adalah motor matic 155cc sporty dengan performa tangguh, fitur canggih, dan desain modern.',
         'harga_rental'=> '100000',
