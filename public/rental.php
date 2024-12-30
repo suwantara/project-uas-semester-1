@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental</title>
-    <link rel="stylesheet" href="rental.css">
+    <link rel="stylesheet" href="../public/style/rental.css">
     <?php require_once "application/controller/rental.php";?>
 </head>
 <body>

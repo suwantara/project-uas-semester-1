@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinasi</title>
-    <link rel="stylesheet" href="../destination.css">
+    <link rel="stylesheet" href="../public/style/destination.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <?php require_once "application/controller/destination.php";?>
     
