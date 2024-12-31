@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental</title>
     <link rel="stylesheet" href="../public/style/rental.css">
-    <?php require_once "application/controller/rental.php";?>
+    <?php require_once "../application/controller/rental.php";?>
 </head>
 <body>
     <!-- Header dengan Navigation -->
-    <?php include "layout/header.html" ?>
+    <?php include "../layout/header.html" ?>
 
     <!-- Hero Section -->
     <section id="beranda">
@@ -43,6 +43,6 @@
     </section>
 
     <!-- Footer -->
-    <?php include "layout/footer.html" ?>
+    <?php include "../layout/footer.html" ?>
 </body>
 </html>

@@ -6,12 +6,12 @@
     <title>Destinasi</title>
     <link rel="stylesheet" href="../public/style/destination.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <?php require_once "application/controller/destination.php";?>
+    <?php require_once "../application/controller/destination.php";?>
     
 </head>
 <body>
     <!-- Header dengan Navigation -->
-    <?php include "layout/header.html";?>
+    <?php include "../layout/header.html";?>
 
         <!-- Hero Section -->
         <section id="beranda">
@@ -46,6 +46,6 @@
 
 
     <!-- Footer -->
-    <?php include "layout/footer.html"; ?>
+    <?php include "../layout/footer.html"; ?>
 </body>
 </html>
