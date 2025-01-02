@@ -35,8 +35,8 @@
                     <div class="dropdown-menu">
                         <?php foreach ($data_destinasi as $destinasi): ?>
                             <label>
-                                <input type="checkbox" name="destination[]" value="<?= $destinasi['judul'] ?>">
-                                <?= $destinasi['judul'] ?> - Rp <?= number_format($destinasi['harga'], 0, ',', '.') ?>
+                                <input type="checkbox" name="destination[]" value="<?= $destinasi->judul ?>" <?= $destinasi->available ? '' : 'disabled' ?>>
+                                <?= $destinasi->judul ?> - Rp <?= number_format($destinasi->harga, 0, ',', '.') ?> <?= $destinasi->available ? '' : '(Tidak Tersedia)' ?>
                             </label>
                         <?php endforeach; ?>
                     </div>
@@ -86,8 +86,8 @@
 
                 // Hitung total harga destinasi
                 foreach ($data_destinasi as $destinasi) {
-                    if (in_array($destinasi['judul'], $destinations)) {
-                        $total_destination_price += $destinasi['harga'];
+                    if (in_array($destinasi->judul, $destinations)) {
+                        $total_destination_price += $destinasi->harga;
                     }
                 }
 

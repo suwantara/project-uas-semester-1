@@ -7,12 +7,15 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text for contrast */
 }
 
 /* Header & Navigation */
 header {
-    background: rgb(238, 238, 238);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #002600; /* Green with glassmorphism effect */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -28,7 +31,7 @@ nav {
 }
 
 .logo {
-    color: #2563eb;
+    color: #ffffff; /* White text */
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
@@ -42,16 +45,16 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff; /* White text */
 }
 
 .nav-links a:hover {
-    color: #2563eb;
+    color: #000000; /* Highlight color */
 }
 
 /* Footer */
 footer {
-    background: #1f2937;
+    background: #002600; /* Green background */
     color: white;
     padding: 3rem 1rem;
 }
@@ -68,12 +71,12 @@ footer {
 }
 
 .footer-links a {
-    color: #9ca3af;
+    color: #ffffff; /* White text */
     text-decoration: none;
 }
 
 .footer-links a:hover {
-    color: white;
+    color: #000000; /* Highlight color */
 }
 
 .social-links {
@@ -81,9 +84,17 @@ footer {
     gap: 1rem;
 }
 
+.social-links a {
+    color: #ffffff; /* White text */
+}
+
+.social-links a:hover {
+    color: #000000; /* Highlight color */
+}
+
 .copyright {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid #374151;
-    color: #9ca3af;
+    color: #ffffff; /* White text */
 }

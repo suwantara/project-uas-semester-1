@@ -31,12 +31,12 @@
                 <div class="grid">
                     <?php foreach ($data_destinasi as $destinasi): ?>
                         <div class="card">
-                            <img src="<?php echo $destinasi['gambar']; ?>" alt="<?php echo $destinasi['judul']; ?>">
+                            <img src="<?php echo $destinasi->gambar; ?>" alt="<?php echo $destinasi->judul; ?>">
                                 <div class="card-content">
-                                    <h3><?php echo $destinasi['judul']; ?></h3>
-                                    <p><?php echo $destinasi['deskripsi']; ?></p>
-                                    <p>Lokasi: <?php echo $destinasi['lokasi']; ?></p>
-                                    <p>Rating: <?php echo $destinasi['rating']; ?></p>
+                                    <h3><?php echo $destinasi->judul; ?></h3>
+                                    <p><?php echo $destinasi->deskripsi; ?></p>
+                                    <p>Lokasi: <?php echo $destinasi->lokasi; ?></p>
+                                    <p>Rating: <?php echo $destinasi->rating; ?></p>
                                 </div>
                         </div>
                     <?php endforeach; ?>

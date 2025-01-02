@@ -18,13 +18,13 @@
 
     <!-- Hero Section -->
     <section id="beranda">
-    <div class="hero-content">
-        <h1>Jelajahi Keindahan Tradisi Bali
-            Pengalaman Wisata yang Tak Terlupakan</h1>
-        <p>Dapatkan pengalaman wisata yang luar biasa di Bali, tempat keindahan alam dan budaya hidup bersatu. 
-            Nikmati perjalanan yang penuh inspirasi, dari pantai terindah hingga candi-candi yang luar biasa.</p>
-        <a href="#tour" class="btn">Explore Tours</a>
-    </div>
+        <div class="hero-content">
+            <h1>Jelajahi Keindahan Tradisi Bali
+                Pengalaman Wisata yang Tak Terlupakan</h1>
+            <p>Dapatkan pengalaman wisata yang luar biasa di Bali, tempat keindahan alam dan budaya hidup bersatu. 
+                Nikmati perjalanan yang penuh inspirasi, dari pantai terindah hingga candi-candi yang luar biasa.</p>
+            <a href="#tour" class="btn">Explore Tours</a>
+        </div>
     </section>
 
     <!-- Destinasi Section -->
@@ -34,12 +34,12 @@
                 <div class="grid">
                     <?php foreach ($data_destinasi as $destinasi): ?>
                         <div class="card">
-                            <img src="<?php echo $destinasi['gambar']; ?>" alt="<?php echo $destinasi['judul']; ?>">
+                            <img src="<?php echo $destinasi->gambar; ?>" alt="<?php echo $destinasi->judul; ?>">
                                 <div class="card-content">
-                                    <h3><?php echo $destinasi['judul']; ?></h3>
-                                    <p><?php echo $destinasi['deskripsi']; ?></p>
-                                    <p>Lokasi: <?php echo $destinasi['lokasi']; ?></p>
-                                    <p>Rating: <?php echo $destinasi['rating']; ?></p>
+                                    <h3><?php echo $destinasi->judul; ?></h3>
+                                    <p><?php echo $destinasi->deskripsi; ?></p>
+                                    <p>Lokasi: <?php echo $destinasi->lokasi; ?></p>
+                                    <p>Rating: <?php echo $destinasi->rating; ?></p>
                                 </div>
                         </div>
                     <?php endforeach; ?>
@@ -91,12 +91,12 @@
 
     <!-- Review Section -->
     <section id="review">
-        <div class="container"></div>
+        <div class="container">
             <h2 class="section-title">Reviews</h2>
             <div class="grid-review">
                 <?php foreach ($data_review as $review): ?>
                     <div class="card-review">
-                        <img src="<?php echo $review['gambar']; ?>" alt="<?php echo $review['gambar']; ?>">
+                        <img src="<?php echo $review['gambar']; ?>" alt="<?php echo $review['nama']; ?>">
                         <div class="card-content">
                             <h3><?php echo $review['nama']; ?></h3>
                             <p><?php echo $review['asal']; ?></p>
